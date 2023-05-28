@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: #2f3033;
+    box-shadow: 0px 3px 10px #464646;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 1.15rem;
+    color: white;
+}
+
+.contact-btn {
+    border-radius: 5px;
+}
+
+.contact-btn button {
+    background-color: #2f3033;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.contact-btn button a {
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+@media screen and (max-width:730px) {
+    .navigation {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+
+    .contact-btn {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .menu-mobile .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .menu-mobile .contact-btn {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .menu-mobile .contact-btn button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
