@@ -20,12 +20,19 @@ header {
 .navigation {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 6rem;
+    padding: 1.5rem 5rem;
 }
 
 .logo {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    line-height: 0;
+    letter-spacing: 2px;
 }
 
 .logo h1 {
@@ -82,10 +89,20 @@ a {
     display: none;
 }
 
+.logo h1 {
+    opacity: 0;
+}
+
+.logo-img {
+    width: 40px;
+    margin-inline: -65px;
+}
+
 @media screen and (max-width:730px) {
     .navigation {
         padding: 1.5rem 4rem;
     }
+
     .nav-item {
         display: none;
     }
